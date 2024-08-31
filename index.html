@@ -5,62 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Truck</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#location">Location</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Food Truck</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <header id="hero">
-        <div class="hero-content">
-            <h1>Welcome to Our Food Truck</h1>
-            <p>Delicious food on wheels</p>
+    <!-- Hero Section -->
+    <header id="hero" class="bg-light text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Welcome to Our Food Truck</h1>
+            <p class="lead">Delicious food on wheels</p>
         </div>
     </header>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We are a family-owned food truck serving fresh and tasty meals to our community. Our menu is inspired by traditional recipes and made with love.</p>
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are a family-owned food truck serving fresh and tasty meals to our community. Our menu is inspired by traditional recipes and made with love.</p>
+        </div>
     </section>
 
-    <section id="menu">
-        <h2>Our Menu</h2>
-        <ul>
-            <li>Tacos - $8</li>
-            <li>Burgers - $10</li>
-            <li>Fries - $5</li>
-            <li>Salads - $7</li>
-            <li>Drinks - $2</li>
-        </ul>
+    <!-- Menu Section -->
+    <section id="menu" class="py-5 bg-light">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Tacos - $8</li>
+                <li class="list-group-item">Burgers - $10</li>
+                <li class="list-group-item">Fries - $5</li>
+                <li class="list-group-item">Salads - $7</li>
+                <li class="list-group-item">Drinks - $2</li>
+            </ul>
+        </div>
     </section>
 
-    <section id="location">
-        <h2>Where to Find Us</h2>
-        <p>We are located at the corner of 5th Street and Main Avenue. Follow us on social media for our daily location updates!</p>
+    <!-- Location Section -->
+    <section id="location" class="py-5">
+        <div class="container">
+            <h2>Where to Find Us</h2>
+            <p>We are located at the corner of 5th Street and Main Avenue. Follow us on social media for our daily location updates!</p>
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: foodtruck@example.com</p>
-        <p>Phone: (123) 456-7890</p>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:foodtruck@example.com">foodtruck@example.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">(123) 456-7890</a></p>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Our Food Truck</p>
+    <!-- Footer -->
+    <footer class="text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 Our Food Truck</p>
+        </div>
     </footer>
+
+    <!-- Smooth Scrolling Script -->
     <script>
-        document.querySelectorAll('nav ul li a').forEach(anchor => {
+        document.querySelectorAll('nav .nav-link').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
-
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth',
                     block: 'start'
