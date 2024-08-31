@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    scroll-behavior: smooth;
+    /*scroll-behavior: smooth;*/
 }
 
 nav {
@@ -47,7 +47,13 @@ header {
     align-items: center;
     color: white;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 60px; /* Adjust if needed */
+}
+
+header .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header .hero-content h1 {
