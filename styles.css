@@ -1,3 +1,4 @@
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,11 +7,16 @@ body {
     /*scroll-behavior: smooth;*/
 }
 
+.sidebar-logo {
+    border-radius: 50%;
+}
+
+/* Replace with variables from vars.css */
 nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #333;
+    background-color: var(--primary-red);
     z-index: 1000;
     padding: 10px 0;
 }
@@ -28,12 +34,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: var(--text-light);
     text-decoration: none;
     font-size: 1.2rem;
 }
 
 nav ul li a:hover {
+    color: var(--primary-orange);
     text-decoration: underline;
 }
 
@@ -45,7 +52,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--text-light);
     text-align: center;
     padding-top: 60px; /* Adjust if needed */
 }
@@ -94,8 +101,8 @@ section p {
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: var(--secondary-red);
+    color: var(--text-light);
     text-align: center;
     padding: 20px 0;
     margin-top: 50px;
