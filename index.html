@@ -10,13 +10,25 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         /* Custom styles for the sidebar and links */
+        /*Should really be in styles.css but why break it now*/
+
+        /*
+        TODO: 
+        >diagnose and fix issue with most recently edited text
+         style (here vs styles.css) showing in live server
+        >match site color scheme to CF logo
+        >round out corners on images and divs
+        >font & icons
+        >contact info
+         */
+    
         .fixed-sidebar {
             position: fixed;
             top: 0;
             left: 0;
             height: 100%;
             width: 250px;
-            background-color: #f8f9fa;
+            background-color: var(--secondary-brown);
             padding: 20px;
             overflow-y: auto;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
@@ -29,7 +41,7 @@
         }
 
         .nav-link {
-            color: #007bff;
+            color: var(--primary-orange);
             font-weight: 500;
             padding: 10px 0;
             border-bottom: 1px solid #e9ecef;
@@ -37,13 +49,13 @@
         }
 
         .nav-link.active {
-            background-color: #007bff;
-            color: #fff;
+            background-color: var(--primary-red);
+            color: var(--secondary-brown);
             border-radius: 5px;
         }
 
         .nav-link:hover {
-            background-color: #007bff;
+            background-color: var(--primary-red);
             color: #fff;
             border-radius: 5px;
         }
@@ -159,13 +171,13 @@
                 that are made to order with bold flavors and the 
                 freshest ingredients. Find us in Mt. Pleasant or 
                 contact us to bring a delicious culinary experience 
-                to your next event!</p>
+                to you!</p>
             <ul>
-                <li>Tacos - $8</li>
-                <li>Burgers - $10</li>
-                <li>Fries - $5</li>
-                <li>Salads - $7</li>
-                <li>Drinks - $2</li>
+                <li>Menu Item Photo</li>
+                <li>Menu Item Photo</li>
+                <li>Menu Item Photo</li>
+                <li>Menu Item Photo</li>
+                <li>Menu Item Photo</li>
             </ul>
         </section>
 
@@ -180,9 +192,9 @@
         </section>
 
         <section id="contact" class="my-5">
-            <h2>Contact Us</h2>
-            <p>Email: foodtruck@example.com</p>
-            <p>Phone: (123) 456-7890</p>
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:thaitaco@icloud.com">thaitaco@icloud.com</a></p>
+            <p><a href="https://www.facebook.com/CentralFusionThaiTaco">Like us on Facebook!</a></p>
         </section>
 
         <footer class="text-center py-4">

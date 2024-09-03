@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-color: var(--primary-brown);
     /*scroll-behavior: smooth;*/
 }
 
@@ -54,6 +55,11 @@ header {
     align-items: center;
     color: var(--text-light);
     text-align: center;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
     padding-top: 60px; /* Adjust if needed */
 }
 
