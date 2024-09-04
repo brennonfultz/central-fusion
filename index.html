@@ -20,6 +20,7 @@
         >round out corners on images and divs
         >font & icons
         >contact info
+        >fix carousel button color
          */
     
         .fixed-sidebar {
@@ -44,13 +45,12 @@
             color: var(--primary-orange);
             font-weight: 500;
             padding: 10px 0;
-            border-bottom: 1px solid #e9ecef;
             transition: background-color 0.3s, color 0.3s;
         }
 
         .nav-link.active {
             background-color: var(--primary-red);
-            color: var(--secondary-brown);
+            color: #fff;
             border-radius: 5px;
         }
 
@@ -155,7 +155,8 @@
         <header id="hero" class="text-center py-5">
             <div class="hero-content">
                 <h1>Central Fusion & Urbano's</h1>
-                <p>Latin Thai fusion street food, fresh salsa, and thick & crispy tortilla chips. </p>
+                <p>Latin Thai fusion street food, fresh salsa, and thick & crispy tortilla chips. </p><br>
+                <p>Mt. Pleasant, MI.</p>
             </div>
         </header>
 
@@ -171,18 +172,41 @@
                 that are made to order with bold flavors and the 
                 freshest ingredients. Find us in Mt. Pleasant or 
                 contact us to bring a delicious culinary experience 
-                to you!</p>
-            <ul>
-                <li>Menu Item Photo</li>
-                <li>Menu Item Photo</li>
-                <li>Menu Item Photo</li>
-                <li>Menu Item Photo</li>
-                <li>Menu Item Photo</li>
-            </ul>
+                to you!</p><br>
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="nachos_avo.jpg" class="d-block w-100" alt="Nachos">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="pad_thai.jpg" class="d-block w-100" alt="pad thai">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="fried_rice.jpg" class="d-block w-100" alt="fried rice">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="bbq_nachos.jpg" class="d-block w-100" alt="bbq nachos">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="curry.jpg" class="d-block w-100" alt="green curry">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            
         </section>
 
         <section id="location" class="my-5">
             <h2>Urbano's Chips & Salsa</h2>
+            <div class="free-image"><img src="chips_salsa_table.jpg"></div>
+            <br>
             <p>Perfected over years as a family recipe, 
                 Urbano's Tortilla Chips offer a craveable 
                 "thick & crispy" texture, perfect for holding 

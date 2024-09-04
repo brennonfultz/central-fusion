@@ -4,7 +4,10 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: var(--primary-brown);
+    background-image: url('light_wood.jpg'); /* Replace with your image path */
+    background-repeat: repeat; /* Tiling the image */
+    background-size: 25% auto; /* Keeps the image at its original size */
+    background-position: top left;
     /*scroll-behavior: smooth;*/
 }
 
@@ -45,11 +48,44 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+.fixed-sidebar .nav-item {
+    margin-bottom: 3px; /* Space between items */
+}
+
+.fixed-sidebar .nav-link:hover {
+    background-color: var(--primary-red);
+    color: #fff;
+}
+
+.fixed-sidebar .nav-link {
+    color: var(--primary-orange);
+    padding: 10px 20px;
+}
+
+.offcanvas .nav-item {
+    margin-bottom: 2px; /* Space between items in mobile view */
+}
+
+.nav-link.active {
+    background-color: var(--primary-red);
+    color: #fff;
+    border-radius: 5px;
+}
+
+.fixed-sidebar .nav-link:hover {
+    background-color: var(--primary-red);
+    color: #fff;
+    border-radius: 5px;
+}
+
 header {
-    background-image: url('food-truck.jpg');
+    background-image: url('truck_angle.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
+    border: 3px solid rgba(97, 16, 16, 0.884);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,6 +132,22 @@ section p {
     font-size: 1.2rem;
 }
 
+.carousel-inner img {
+    max-height: 500px; /* Fixed height */
+    width: auto; /* Auto width to maintain aspect ratio */
+    object-fit: contain; /* Ensures the image covers the entire area without stretching */
+}
+
+
+.free-image img {
+    max-width: 50%
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
 #menu ul {
     list-style-type: none;
     padding: 0;
@@ -107,11 +159,12 @@ section p {
 }
 
 footer {
-    background-color: var(--secondary-red);
+    background-color: var(--primary-red);
     color: var(--text-light);
     text-align: center;
     padding: 20px 0;
     margin-top: 50px;
+    border-radius: 10px;
 }
 
 footer p {
